@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frameChart>
+<xAxis> 
+ <labelStyle isHideOverlapped="false" orientation="Vertical"/> 
+</xAxis>
+<legend placement="Top" equalCols="false">
+<![CDATA[
+$(colLabel) [$(value) or $(colPercent)]
+]]>
+</legend>
+<paint palette="Modern" paint="Plain" isVertical="true" min="47" max="83"/>
+</frameChart>

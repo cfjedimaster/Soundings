@@ -1,0 +1,63 @@
+h2 {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+a {
+	color: black;
+}
+
+/* added by jpa */
+body{
+	background-color: #ffffff;
+	font-family: Verdana, Arial;
+	font-size: 11px;
+}
+
+td {
+	text-align: left;
+}
+
+
+.error {
+	font-weight: bold;
+}
+
+/* added by John Ramon */
+
+/* questions */
+.question {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width:100%;
+	padding: 2px;
+}
+/* answers text */
+.answers {
+	width: 100%;
+	padding: 2px;
+}
+/* Survey name */
+.surveyName{
+	font-size: 22px;
+	font-weight: bold;
+	padding: 3px;
+}
+/* page # of # - text */
+.pages {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* class for survey complete message */
+.surveyDone {
+}
+/* class for survey messages */
+.surveyMessages {
+
+}
+
+.required {
+	color: #ff0000;
+}

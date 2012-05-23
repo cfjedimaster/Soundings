@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pieChart style="Solid">
+<legend placement="Top" equalCols="false">
+<![CDATA[
+$(colLabel) ($(value)/$(colPercent))
+]]>
+</legend>
+<paint palette="Modern" paint="Plain" min="44" max="95"/>
+</pieChart>

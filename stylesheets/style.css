@@ -1,0 +1,100 @@
+.tMain {
+	background-color: #66ccff; 
+}
+
+.tHeader {
+	background-color: #6699ff;
+	
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.tableRow0, .tableRow0 a {
+	background-color: #ffffff;
+	color: #235577;
+}
+
+.tableRow1, .tableRow1 a {
+	background-color: #eff4f6;
+	color: #235577;
+}
+
+.tableRowMain {
+	background-color: #eff4f6;
+	color: #000000;
+}
+
+a {
+	color: black;
+}
+
+/* added by jpa */
+body{
+	background-color: #66cccc;
+	text-align: center;
+	font-family: Verdana, Arial;
+	font-size: 11px;
+}
+
+td {
+	text-align: left;
+}
+
+div#container{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 750px;
+	text-align: left;
+	padding: 2px;
+	background-color: #ffffff;
+}
+
+div#menu{
+}
+
+.error {
+	font-weight: bold;
+}
+
+/* added by John Ramon */
+
+/* questions */
+.question {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width:100%;
+	padding: 2px;
+}
+/* answers text */
+.answers {
+	width: 100%;
+	padding: 2px;
+}
+/* Survey name */
+.surveyName{
+	font-size: 22px;
+	font-weight: bold;
+	padding: 3px;
+}
+/* page # of # - text */
+.pages {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* class for survey complete message */
+.surveyDone {
+}
+/* class for survey messages */
+.surveyMessages {
+
+}
+
+.required {
+	color: #ff0000;
+}
