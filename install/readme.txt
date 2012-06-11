@@ -16,11 +16,15 @@ wishlist: http://www.amazon.com/o/registry/2TCL1D08EZEYE
 
 
 ========================================= CURRENT UPDATES =========================================
+Last Update: June 10, 2012 (Version 4.5.2)
+/cfcs/settings.xml.cfm - version
+/cfcs/survey.cfc and question.cfc - fixes for duplicating surveys and questions. Credit to user Grant
+
+========================================= ARCHIVED UPDATES =========================================
 Last Update: April 25, 2012 (Version 4.5.1)
 /cfcs/settings.xml.cfm - version
 /tags/surverydisplay.cfm - yet another branching fix
 
-========================================= ARCHIVED UPDATES =========================================
 Last Update: April 11, 2012 (Version 4.5)
 /admin/stats.cfm - display bug - not a real fix - just disabled he cf7 one
 

@@ -178,14 +178,27 @@
 		<cfset var q = getQuestion(arguments.id)>
 		<cfset var answers = getAnswers(arguments.id)>
 		<cfset var aData = arrayNew(1)>
-			
+		<cfset var newq = "">
+		<cfset var branches = arrayNew(1)>
+		
 		<cfloop query="answers">
 			<cfset aData[arrayLen(aData)+1] = structNew()>
 			<cfset aData[arrayLen(aData)].answer = answers.answer>
 			<cfset aData[arrayLen(aData)].rank = answers.rank>			
 		</cfloop>
 
-		<cfset addQuestion(q.question,q.rank,q.required,arguments.surveyidfk,q.questionTypeIDFK,aData,q.nextquestion,q.nextquestionvalue)>
+		<cfset newq = addQuestion(q.question,q.rank,q.required,arguments.surveyidfk,q.questionTypeIDFK,aData)>
+
+		<cfif q.branches.recordCount>
+			<!--- we must convert the query into an array --->
+			<cfloop query="q.branches">
+				<cfset arrayAppend(branches, {nextquestion=nextquestion, 
+											nextquestionvalue=nextquestionvalue, 
+											rank=rank})>
+				
+			</cfloop>
+			<cfset setQuestionBranches(newq, branches)>
+		</cfif>
 		
 	</cffunction>
 	

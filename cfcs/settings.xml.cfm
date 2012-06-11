@@ -5,6 +5,6 @@
 	<fromaddress>soundings@localhost</fromaddress>
 	<perpage>4</perpage>
 	<tableprefix></tableprefix>
-	<version>4.5.1</version>
+	<version>4.5.2</version>
 </settings>
 --->

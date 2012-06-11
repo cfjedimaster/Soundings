@@ -227,7 +227,7 @@ A) #getAnswerResult(questions.id,arguments.ownerid)#
 		<cfargument name="useridfk" type="uuid" required="false">
 
 		<cfset var s = "">
-		<cfset var question = createObject("component","question").init(variables.dsn, variables.dbtype, variables.tableprefix)>
+		<cfset var question = createObject("component","question").init(variables.settings)>
 		<cfset var questions = 	question.getQuestions(arguments.id)>
 		<cfset var el = getEmailList(arguments.id)>
 		<cfset var elA = listToArray(valueList(el.emailAddress))>
