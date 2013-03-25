@@ -28,6 +28,14 @@
 		
 	<cfset session.surveys = structNew()>
 	<cfset application.init = true>
+	<cfset application.chartformat = "flash">
+
+	<cftry>
+		<cfif server.coldfusion.productname EQ "railo">
+			<cfset application.chartformat = "png">
+		</cfif>
+		<cfcatch></cfcatch>
+	</cftry>
 	
 </cfif>
 
