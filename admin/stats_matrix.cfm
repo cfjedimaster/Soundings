@@ -1,13 +1,13 @@
-<!---
-	Name         : C:\projects\soundings\wwwroot\soundings\admin\stats_matrix.cfm
-	Author       : Raymond Camden 
-	Created      : 03/02/06
-	Last Updated : 
-	History      : 
---->
-
-
-<cfchart format="flash" chartWidth="575" chartHeight="575" rotated="yes" show3d=true showLegend=true style="style.xml">
+<cfsilent>
+	<!---
+		Name         : C:\projects\soundings\wwwroot\soundings\admin\stats_matrix.cfm
+		Author       : Raymond Camden 
+		Created      : 03/02/06
+		Last Updated : 
+		History      : 
+	--->
+</cfsilent>
+<cfchart format="#application.chartformat#" chartWidth="575" chartHeight="575" rotated="yes" show3d=true showLegend=true style="style.xml">
 <cfloop list="#sortedItems#" index="item">
 	<cfset label = data[item].label>							
 		<cfchartseries type="bar" paintStyle="raise" seriesColor="#currentColor#" seriesLabel="#label#">
@@ -24,4 +24,3 @@
 		<cfset currentColor = listGetAt(colorList, currentColorIndex)>
 </cfloop>
 </cfchart>
-						
