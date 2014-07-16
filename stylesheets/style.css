@@ -98,3 +98,7 @@ div#menu{
 .required {
 	color: #ff0000;
 }
+
+div.intro {
+	margin-bottom: 10px;	
+}

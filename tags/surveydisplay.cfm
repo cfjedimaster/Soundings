@@ -200,7 +200,7 @@
 		TODO: Rework to a % for 1 per page question surveys
 	--->
 	<cfif numPages neq 1><div class="pages">Page #currentInfo.currentStep# out of #numPages#</div></cfif>
-	<div>Questions marked with '<strong class="required">*</strong>' are required to complete the survey.</div>
+	<div class="intro">Questions marked with '<strong class="required">*</strong>' are required to complete the survey.</div>
 	</cfoutput>
 <cfelse>
 	<cfoutput>
