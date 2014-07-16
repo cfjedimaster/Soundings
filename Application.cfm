@@ -34,7 +34,6 @@
 	<cfif not directoryExists(application.settings.attachmentdir)>
 		<cfthrow message="Directory specified as the attachment directory does not exist.">
 	</cfif>
-	<cfset application.init = true>
 	<cfset application.chartformat = "flash">
 
 	<cftry>
@@ -43,6 +42,8 @@
 		</cfif>
 		<cfcatch></cfcatch>
 	</cftry>
+
+	<cfset application.init = true>
 	
 </cfif>
 
