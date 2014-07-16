@@ -27,6 +27,13 @@
 	<cfset application.toxml = createObject("component","cfcs.toxml")>
 		
 	<cfset session.surveys = structNew()>
+
+	<!---
+	A required setting is attachment dir. We need to ensure it exists.
+	--->
+	<cfif not directoryExists(application.settings.attachmentdir)>
+		<cfthrow message="Directory specified as the attachment directory does not exist.">
+	</cfif>
 	<cfset application.init = true>
 	
 </cfif>

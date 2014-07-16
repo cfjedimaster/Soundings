@@ -19,15 +19,20 @@
 			questionidfk="#url.questionidfk#"
 			r_data="data" 
 />
-
 <cfparam name="url.start" default="1">
 <cfset perpage = 20>
 
 <tags:layout templatename="plain" title="Text Answers">
 
-<cfoutput>
-<h2>Text Answers for #question.question#</h2>
-</cfoutput>
+<cfif question.questiontype is "Attachment">
+	<cfoutput>
+	<h2>Attachments for #question.question#</h2>
+	</cfoutput>
+<cfelse>
+	<cfoutput>
+	<h2>Text Answers for #question.question#</h2>
+	</cfoutput>
+</cfif>
 
 <cfif data.recordCount is 0>
 
@@ -67,7 +72,11 @@
 			<cfif currentRow mod 2>bgcolor="yellow"</cfif>
 		>
 		<td>#currentRow#</td>
-		<td width="95%">#val#</td>
+		<cfif question.questiontype is "Attachment">
+			<td width="95%"><a href="attachmentviewer.cfm?attachment=#urlEncodedFormat(val)#" target="_blank">#val#</a></td>
+		<cfelse>
+			<td width="95%">#val#</td>
+		</cfif>
 		</tr>
 	</cfoutput>
 	

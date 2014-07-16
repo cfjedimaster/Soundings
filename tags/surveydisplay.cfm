@@ -66,7 +66,7 @@
 		<div class="surveyMessages">In order to use this survey, you must enter a password. This password should have been
 		sent to you with your survey invitation.</div>
 		<cfif showError></p><p><b>Sorry, but the password you entered is not correct.</b></cfif>
-		<form action="#cgi.script_name#?#cgi.query_string#" method="post">
+		<form action="#cgi.script_name#?#cgi.query_string#" method="post"> 
 		<input type="password" name="password"> <input type="submit" value="Enter Password">
 		</form>
 		</p>
@@ -214,7 +214,7 @@
 	<cfset allDone = true>
 
 	<cfoutput>
-	<form action="#cgi.script_name#?#cgi.query_string#" method="post">
+	<form action="#cgi.script_name#?#cgi.query_string#" method="post" enctype="multipart/form-data">
 	</cfoutput>
 	
 	<!--- loop from the first on page till end --->

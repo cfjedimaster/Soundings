@@ -5,6 +5,7 @@
 	<fromaddress>soundings@localhost</fromaddress>
 	<perpage>4</perpage>
 	<tableprefix></tableprefix>
-	<version>4.5.2</version>
+	<version>4.5.3</version>
+	<attachmentdir>/Users/ray/Desktop</attachmentdir>
 </settings>
 --->

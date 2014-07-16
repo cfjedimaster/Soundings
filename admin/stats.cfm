@@ -260,7 +260,7 @@
 							<cfcase value="Matrix">
 								<cfset total = data.realTotal>
 							</cfcase>
-							<cfcase value="Text Box (Single),Text Box (Multi)">
+							<cfcase value="Text Box (Single),Text Box (Multi),Attachment">
 								<cfset total = data.recordCount>
 							</cfcase>
 							<cfcase value="True/False,Yes/No">
@@ -340,7 +340,13 @@
 							<a href="javascript:popup('textviewer.cfm?questionidfk=#id#&earliestdate=#form.earliestdate#&latestdate=#form.latestdate#')">View Answers</a>
 							</cfoutput>
 						</cfcase>
-						
+
+						<cfcase value="attachment">
+							<cfoutput>
+							<a href="javascript:popup('textviewer.cfm?questionidfk=#id#&earliestdate=#form.earliestdate#&latestdate=#form.latestdate#')">View Attachments</a>
+							</cfoutput>
+						</cfcase>
+												
 						<cfcase value="matrix">
 							
 							<cfset sortedAnswers = data.sortedAnswers>
