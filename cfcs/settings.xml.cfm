@@ -6,6 +6,6 @@
 	<perpage>4</perpage>
 	<tableprefix></tableprefix>
 	<version>4.5.3</version>
-	<attachmentdir>/Users/ray/Desktop</attachmentdir>
+	<attachmentdir>Set me to a valid directory</attachmentdir>
 </settings>
 --->

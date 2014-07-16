@@ -159,5 +159,8 @@ VALUES('6C390D2F-BA60-EA48-8EF87424CF09FD03', 'Text Box (Single)', 'textbox');
 INSERT INTO questiontypes(id, name, handlerroot)
 VALUES('6C3930D4-AA69-D471-58DBBC6CF38E5101', 'Text Box (Multi)', 'textboxmulti');
 
+INSERT INTO questiontypes(id, name, handlerroot)
+VALUES('7B37CCC1-A526-41E6-6B0C275436BCF06F', 'Attachment', 'attachment');
+
 INSERT INTO users(username, password,isadmin,id)
 VALUES('admin', '21232F297A57A5A743894A0E4A801FC3',1,'7DFC0843-99A6-B280-667D443F86BC2FEA');

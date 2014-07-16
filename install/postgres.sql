@@ -164,6 +164,7 @@ INSERT INTO questiontypes (id, name, handlerroot) VALUES ('1E9D6956-A402-C7A8-43
 INSERT INTO questiontypes (id, name, handlerroot) VALUES ('1E9F94A2-F891-24EB-0B958132B3E90F4D', 'Text Box (Single)', 'textbox');
 INSERT INTO questiontypes (id, name, handlerroot) VALUES ('1E9FBB54-F2D2-64FE-CC53AD6C2B7F32C2', 'Text Box (Multi)', 'textboxmulti');
 INSERT INTO questiontypes (id, name, handlerroot) VALUES ('1EB9DDE1-C9C4-302C-3B98D7C3FEFD49E6', 'Matrix', 'matrix');
+INSERT INTO questiontypes (id, name, handlerroot) VALUES ('7B37CCC1-A526-41E6-6B0C275436BCF06F', 'Attachment', 'attachment');
 
 INSERT INTO users (username, password, id, isadmin) VALUES ('admin', '21232F297A57A5A743894A0E4A801FC3', '7DFC0843-99A6-B280-667D443F86BC2FEA', true);
 

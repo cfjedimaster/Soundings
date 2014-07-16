@@ -16,11 +16,21 @@ wishlist: http://www.amazon.com/o/registry/2TCL1D08EZEYE
 
 
 ========================================= CURRENT UPDATES =========================================
+Last Update: July 16, 2014 (Version 4.5.3)
+/cfcs/settings.xml.cfm - version and attachmentdir setting. The attachment dir setting is for the
+new attachment question type. You *must* set this to an existing directory (preferably out of web
+root) even if you don't plan on using the new question type.
+
+To finish support for the new question type, insert a new row into questiontypes by simply copying and
+pasting the script from the install folder. Not the entire script of course, just the insert line.
+
+Other files have changed too - see the last github update for more info.
+
+========================================= ARCHIVED UPDATES =========================================
 Last Update: June 10, 2012 (Version 4.5.2)
 /cfcs/settings.xml.cfm - version
 /cfcs/survey.cfc and question.cfc - fixes for duplicating surveys and questions. Credit to user Grant
 
-========================================= ARCHIVED UPDATES =========================================
 Last Update: April 25, 2012 (Version 4.5.1)
 /cfcs/settings.xml.cfm - version
 /tags/surverydisplay.cfm - yet another branching fix
