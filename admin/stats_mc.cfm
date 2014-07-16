@@ -1,3 +1,4 @@
+<cfsilent>
 <!---
 	Name         : C:\projects\soundings\wwwroot\soundings\admin\stats_mc.cfm
 	Author       : Raymond Camden 
@@ -6,8 +7,8 @@
 	History      : 
 	style="style.xml" 
 --->
-
-<cfchart format="flash" chartWidth="575" chartHeight="575"
+</cfsilent>
+<cfchart format="#application.chartformat#" chartWidth="575" chartHeight="575"
 		 gridlines="#max+1#" style="style.xml" scaleFrom="0">
 	<cfchartseries type="bar" paintStyle="raise" seriesColor="#currentColor#">
 		<cfif structKeyExists(data,"other")>

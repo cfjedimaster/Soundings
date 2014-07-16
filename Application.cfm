@@ -35,6 +35,14 @@
 		<cfthrow message="Directory specified as the attachment directory does not exist.">
 	</cfif>
 	<cfset application.init = true>
+	<cfset application.chartformat = "flash">
+
+	<cftry>
+		<cfif server.coldfusion.productname EQ "railo">
+			<cfset application.chartformat = "png">
+		</cfif>
+		<cfcatch></cfcatch>
+	</cftry>
 	
 </cfif>
 

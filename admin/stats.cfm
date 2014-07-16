@@ -290,8 +290,8 @@
 							<cfif cfmx7>
 								<cfinclude template="stats_pie.cfm">
 							<cfelse>
-								<cfchart format="flash" chartWidth="575" chartHeight="575"
-										 rotated="yes" gridLines="#max+1#" show3d="true">
+								<cfchart format="#application.chartformat#" chartWidth="575" chartHeight="575"
+										  gridLines="#max+1#" show3d="true">
 									<cfchartseries type="pie" paintStyle="raise" seriesColor="#currentColor#" dataLabelStyle="pattern">
 										<cfchartdata item="#f#" value="#data.false#">						
 										<cfchartdata item="#t#" value="#data.true#">
@@ -310,8 +310,8 @@
 	
 							<cfelse>						
 	
-								<cfchart format="flash" chartWidth="575" chartHeight="575"
-										 rotated="yes" gridlines="#max+1#" scaleFrom="0">
+								<cfchart format="#application.chartformat#" chartWidth="575" chartHeight="575"
+										  gridlines="#max+1#" scaleFrom="0">
 									<cfchartseries type="bar" paintStyle="raise" seriesColor="#currentColor#">
 										<cfif structKeyExists(data,"other")>
 											<cfchartdata item="Other" value="#data.other#">
@@ -364,7 +364,7 @@
 								
 							<cfelse>
 	
-								<cfchart format="flash" chartWidth="575" chartHeight="575" rotated="yes" show3d=true showLegend=true>
+								<cfchart format="#application.chartformat#" chartWidth="575" chartHeight="575"  show3d=true showLegend=true>
 								<cfloop list="#sortedItems#" index="item">
 									<cfset label = data[item].label>							
 										<cfchartseries type="bar" paintStyle="raise" seriesColor="#currentColor#" seriesLabel="#label#">
