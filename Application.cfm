@@ -1,14 +1,14 @@
 <cfsetting enablecfoutputonly=true showdebugoutput=false>
 <!---
 	Name         : Application.cfm
-	Author       : Raymond Camden 
+	Author       : Raymond Camden
 	Created      : September 2, 2004
 	Last Updated : August 3, 2007
 	History      : change application.cfc to soundings.cfc
 				 : Stupid IE. If you hit ENTER instead of clicking the button, it wouldn't send the value. (rkc 3/1/06)
 				 : work w/o mapping (rkc 3/10/06)
 				 : user changes (rkc 8/3/07)
-	Purpose		 : 
+	Purpose		 :
 --->
 
 <cfapplication name="soundings" sessionManagement="true">
@@ -25,7 +25,7 @@
 	<cfset application.user = createObject("component","cfcs.user").init(application.settings)>
 	<cfset application.utils = createObject("component","cfcs.utils")>
 	<cfset application.toxml = createObject("component","cfcs.toxml")>
-		
+
 	<cfset session.surveys = structNew()>
 
 	<!---
@@ -37,14 +37,14 @@
 	<cfset application.chartformat = "flash">
 
 	<cftry>
-		<cfif server.coldfusion.productname EQ "railo">
+		<cfif server.coldfusion.productname EQ "railo" OR server.coldfusion.productname EQ "lucee">
 			<cfset application.chartformat = "png">
 		</cfif>
 		<cfcatch></cfcatch>
 	</cftry>
 
 	<cfset application.init = true>
-	
+
 </cfif>
 
 <!--- include UDFs --->
@@ -64,7 +64,7 @@
 			<cfset session.loggedin = true>
 		</cfif>
 	</cfif>
-	
+
 </cfif>
 
 <cfsetting enablecfoutputonly=false>
